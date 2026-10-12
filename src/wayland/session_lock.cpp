@@ -179,8 +179,14 @@ void WlSessionLock::unlock() {
 
 	this->surfaces.clear();
 
+	// Capture the state before unlocking: manager->unlock() clears the lock
+	// synchronously, so checking isLocked() afterwards (as before) could never
+	// observe the transition and lockStateChanged was never emitted on unlock.
+	// QML bindings on WlSessionLock.locked then stayed true forever, making
+	// every later lock() call a no-op.
+	auto wasLocked = this->isLocked();
 	if (this->manager) this->manager->unlock();
-	if (this->isLocked()) emit this->lockStateChanged();
+	if (wasLocked) emit this->lockStateChanged();
 }
 
 void WlSessionLock::onScreensChanged() {
