@@ -1,1 +1,197 @@
-I3ByYWdtYSBvbmNlCgojaW5jbHVkZSA8cW9iamVjdC5oPgojaW5jbHVkZSA8cXFtbGludGVncmF0aW9uLmg+CiNpbmNsdWRlIDxxdG1ldGFtYWNyb3MuaD4KCiNpbmNsdWRlICIuLi9jb3JlL2RvYy5ocHAiCiNpbmNsdWRlICIuLi9jb3JlL21vZGVsLmhwcCIKI2luY2x1ZGUgIi4uL2RidXMvcHJvcGVydGllcy5ocHAiCiNpbmNsdWRlICJkYnVzX2FkYXB0ZXIuaCIKCm5hbWVzcGFjZSBxczo6Ymx1ZXRvb3RoIHsKCi8vLyEgUG93ZXIgc3RhdGUgb2YgYSBCbHVldG9vdGggYWRhcHRlci4KY2xhc3MgQmx1ZXRvb3RoQWRhcHRlclN0YXRlOiBwdWJsaWMgUU9iamVjdCB7CglRX09CSkVDVDsKCVFNTF9FTEVNRU5UOwoJUU1MX1NJTkdMRVRPTjsKCnB1YmxpYzoKCWVudW0gRW51bSA6IHF1aW50OCB7CgkJLy8vIFRoZSBhZGFwdGVyIGlzIHBvd2VyZWQgb2ZmLgoJCURpc2FibGVkID0gMCwKCQkvLy8gVGhlIGFkYXB0ZXIgaXMgcG93ZXJlZCBvbi4KCQlFbmFibGVkID0gMSwKCQkvLy8gVGhlIGFkYXB0ZXIgaXMgdHJhbnNpdGlvbmluZyBmcm9tIG9mZiB0byBvbi4KCQlFbmFibGluZyA9IDIsCgkJLy8vIFRoZSBhZGFwdGVyIGlzIHRyYW5zaXRpb25pbmcgZnJvbSBvbiB0byBvZmYuCgkJRGlzYWJsaW5nID0gMywKCQkvLy8gVGhlIGFkYXB0ZXIgaXMgYmxvY2tlZCBieSByZmtpbGwuCgkJQmxvY2tlZCA9IDQsCgl9OwoJUV9FTlVNKEVudW0pOwoKCVFfSU5WT0tBQkxFIHN0YXRpYyBRU3RyaW5nIHRvU3RyaW5nKEJsdWV0b290aEFkYXB0ZXJTdGF0ZTo6RW51bSBzdGF0ZSk7Cn07Cgp9IC8vIG5hbWVzcGFjZSBxczo6Ymx1ZXRvb3RoCgpuYW1lc3BhY2UgcXM6OmRidXMgewoKdGVtcGxhdGUgPD4Kc3RydWN0IERCdXNEYXRhVHJhbnNmb3JtPHFzOjpibHVldG9vdGg6OkJsdWV0b290aEFkYXB0ZXJTdGF0ZTo6RW51bT4gewoJdXNpbmcgV2lyZSA9IFFTdHJpbmc7Cgl1c2luZyBEYXRhID0gcXM6OmJsdWV0b290aDo6Qmx1ZXRvb3RoQWRhcHRlclN0YXRlOjpFbnVtOwoJc3RhdGljIERCdXNSZXN1bHQ8RGF0YT4gZnJvbVdpcmUoY29uc3QgV2lyZSYgd2lyZSk7Cn07Cgp9IC8vIG5hbWVzcGFjZSBxczo6ZGJ1cwoKbmFtZXNwYWNlIHFzOjpibHVldG9vdGggewoKY2xhc3MgQmx1ZXRvb3RoQWRhcHRlcjsKY2xhc3MgQmx1ZXRvb3RoRGV2aWNlOwoKLy8vISBBIEJsdWV0b290aCBhZGFwdGVyCmNsYXNzIEJsdWV0b290aEFkYXB0ZXI6IHB1YmxpYyBRT2JqZWN0IHsKCVFfT0JKRUNUOwoJUU1MX0VMRU1FTlQ7CglRTUxfVU5DUkVBVEFCTEUoIiIpOwoJLy8gY2xhbmctZm9ybWF0IG9mZgoJLy8vIFN5c3RlbSBwcm92aWRlZCBuYW1lIG9mIHRoZSBhZGFwdGVyLiBTZWUgQEBhZGFwdGVySWQgZm9yIHRoZSBpbnRlcm5hbCBpZGVudGlmaWVyLgoJUV9QUk9QRVJUWShRU3RyaW5nIG5hbWUgUkVBRCBkZWZhdWx0IE5PVElGWSBuYW1lQ2hhbmdlZCBCSU5EQUJMRSBiaW5kYWJsZU5hbWUpOwoJLy8vIFRydWUgaWYgdGhlIGFkYXB0ZXIgaXMgY3VycmVudGx5IGVuYWJsZWQuIE1vcmUgZGV0YWlsZWQgc3RhdGUgaXMgYXZhaWxhYmxlIGZyb20gQEBzdGF0ZS4KCVFfUFJPUEVSVFkoYm9vbCBlbmFibGVkIFJFQUQgZW5hYmxlZCBXUklURSBzZXRFbmFibGVkIE5PVElGWSBlbmFibGVkQ2hhbmdlZCk7CgkvLy8gRGV0YWlsZWQgcG93ZXIgc3RhdGUgb2YgdGhlIGFkYXB0ZXIuCglRX1BST1BFUlRZKEJsdWV0b290aEFkYXB0ZXJTdGF0ZTo6RW51bSBzdGF0ZSBSRUFEIGRlZmF1bHQgTk9USUZZIHN0YXRlQ2hhbmdlZCBCSU5EQUJMRSBiaW5kYWJsZVN0YXRlKTsKCS8vLyBUcnVlIGlmIHRoZSBhZGFwdGVyIGNhbiBiZSBkaXNjb3ZlcmVkIGJ5IG90aGVyIGJsdWV0b290aCBkZXZpY2VzLgoJUV9QUk9QRVJUWShib29sIGRpc2NvdmVyYWJsZSBSRUFEIGRpc2NvdmVyYWJsZSBXUklURSBzZXREaXNjb3ZlcmFibGUgTk9USUZZIGRpc2NvdmVyYWJsZUNoYW5nZWQpOwoJLy8vIFRpbWVvdXQgaW4gc2Vjb25kcyBmb3IgaG93IGxvbmcgdGhlIGFkYXB0ZXIgc3RheXMgZGlzY292ZXJhYmxlIGFmdGVyIEBAZGlzY292ZXJhYmxlIGlzIHNldCB0byB0cnVlLgoJLy8vIEEgdmFsdWUgb2YgMCBtZWFucyB0aGUgYWRhcHRlciBzdGF5cyBkaXNjb3ZlcmFibGUgZm9yZXZlci4KCVFfUFJPUEVSVFkocXVpbnQzMiBkaXNjb3ZlcmFibGVUaW1lb3V0IFJFQUQgZGlzY292ZXJhYmxlVGltZW91dCBXUklURSBzZXREaXNjb3ZlcmFibGVUaW1lb3V0IE5PVElGWSBkaXNjb3ZlcmFibGVUaW1lb3V0Q2hhbmdlZCk7CgkvLy8gVHJ1ZSBpZiB0aGUgYWRhcHRlciBpcyBzY2FubmluZyBmb3IgbmV3IGRldmljZXMuCglRX1BST1BFUlRZKGJvb2wgZGlzY292ZXJpbmcgUkVBRCBkaXNjb3ZlcmluZyBXUklURSBzZXREaXNjb3ZlcmluZyBOT1RJRlkgZGlzY292ZXJpbmdDaGFuZ2VkKTsKCS8vLyBUcnVlIGlmIHRoZSBhZGFwdGVyIGlzIGFjY2VwdGluZyBpbmNvbWluZyBwYWlyaW5nIHJlcXVlc3RzLgoJLy8vCgkvLy8gVGhpcyBvbmx5IGFmZmVjdHMgaW5jb21pbmcgcGFpcmluZyByZXF1ZXN0cyBhbmQgc2hvdWxkIHR5cGljYWxseSBvbmx5IGJlIGNoYW5nZWQKCS8vLyBieSBzeXN0ZW0gc2V0dGluZ3MgYXBwbGljYXRpb25zLiBEZWZhdWx0cyB0byB0cnVlLgoJUV9QUk9QRVJUWShib29sIHBhaXJhYmxlIFJFQUQgcGFpcmFibGUgV1JJVEUgc2V0UGFpcmFibGUgTk9USUZZIHBhaXJhYmxlQ2hhbmdlZCk7CgkvLy8gVGltZW91dCBpbiBzZWNvbmRzIGZvciBob3cgbG9uZyB0aGUgYWRhcHRlciBzdGF5cyBwYWlyYWJsZSBhZnRlciBAQHBhaXJhYmxlIGlzIHNldCB0byB0cnVlLgoJLy8vIEEgdmFsdWUgb2YgMCBtZWFucyB0aGUgYWRhcHRlciBzdGF5cyBwYWlyYWJsZSBmb3JldmVyLiBEZWZhdWx0cyB0byAwLgoJUV9QUk9QRVJUWShxdWludDMyIHBhaXJhYmxlVGltZW91dCBSRUFEIHBhaXJhYmxlVGltZW91dCBXUklURSBzZXRQYWlyYWJsZVRpbWVvdXQgTk9USUZZIHBhaXJhYmxlVGltZW91dENoYW5nZWQpOwoJLy8vIEJsdWV0b290aCBkZXZpY2VzIGNvbm5lY3RlZCB0byB0aGlzIGFkYXB0ZXIuCglRU0RPQ19UWVBFX09WRVJSSURFKE9iamVjdE1vZGVsPHFzOjpibHVldG9vdGg6OkJsdWV0b290aERldmljZT4qKTsKCVFfUFJPUEVSVFkoVW50eXBlZE9iamVjdE1vZGVsKiBkZXZpY2VzIFJFQUQgZGV2aWNlcyBDT05TVEFOVCk7CgkvLy8gVGhlIGludGVybmFsIElEIG9mIHRoZSBhZGFwdGVyIChlLmcuLCAiaGNpMCIpLgoJUV9QUk9QRVJUWShRU3RyaW5nIGFkYXB0ZXJJZCBSRUFEIGFkYXB0ZXJJZCBDT05TVEFOVCk7CgkvLy8gREJ1cyBwYXRoIG9mIHRoZSBhZGFwdGVyIHVuZGVyIHRoZSBgb3JnLmJsdWV6YCBzeXN0ZW0gc2VydmljZS4KCVFfUFJPUEVSVFkoUVN0cmluZyBkYnVzUGF0aCBSRUFEIHBhdGggQ09OU1RBTlQpOwoJLy8gY2xhbmctZm9ybWF0IG9uCgpwdWJsaWM6CglleHBsaWNpdCBCbHVldG9vdGhBZGFwdGVyKGNvbnN0IFFTdHJpbmcmIHBhdGgsIFFPYmplY3QqIHBhcmVudCA9IG51bGxwdHIpOwoKCVtbbm9kaXNjYXJkXV0gYm9vbCBpc1ZhbGlkKCkgY29uc3QgeyByZXR1cm4gdGhpcy0+bUludGVyZmFjZS0+aXNWYWxpZCgpOyB9CglbW25vZGlzY2FyZF1dIFFTdHJpbmcgcGF0aCgpIGNvbnN0IHsgcmV0dXJuIHRoaXMtPm1JbnRlcmZhY2UtPnBhdGgoKTsgfQoJW1tub2Rpc2NhcmRdXSBRU3RyaW5nIGFkYXB0ZXJJZCgpIGNvbnN0OwoKCVtbbm9kaXNjYXJkXV0gYm9vbCBlbmFibGVkKCkgY29uc3QgeyByZXR1cm4gdGhpcy0+YkVuYWJsZWQ7IH0KCXZvaWQgc2V0RW5hYmxlZChib29sIGVuYWJsZWQpOwoKCVtbbm9kaXNjYXJkXV0gYm9vbCBkaXNjb3ZlcmFibGUoKSBjb25zdCB7IHJldHVybiB0aGlzLT5iRGlzY292ZXJhYmxlOyB9Cgl2b2lkIHNldERpc2NvdmVyYWJsZShib29sIGRpc2NvdmVyYWJsZSk7CgoJW1tub2Rpc2NhcmRdXSBib29sIGRpc2NvdmVyaW5nKCkgY29uc3QgeyByZXR1cm4gdGhpcy0+YkRpc2NvdmVyaW5nOyB9Cgl2b2lkIHNldERpc2NvdmVyaW5nKGJvb2wgZGlzY292ZXJpbmcpOwoKCVtbbm9kaXNjYXJkXV0gcXVpbnQzMiBkaXNjb3ZlcmFibGVUaW1lb3V0KCkgY29uc3QgeyByZXR1cm4gdGhpcy0+YkRpc2NvdmVyYWJsZVRpbWVvdXQ7IH0KCXZvaWQgc2V0RGlzY292ZXJhYmxlVGltZW91dChxdWludDMyIHRpbWVvdXQpOwoKCVtbbm9kaXNjYXJkXV0gYm9vbCBwYWlyYWJsZSgpIGNvbnN0IHsgcmV0dXJuIHRoaXMtPmJQYWlyYWJsZTsgfQoJdm9pZCBzZXRQYWlyYWJsZShib29sIHBhaXJhYmxlKTsKCglbW25vZGlzY2FyZF1dIHF1aW50MzIgcGFpcmFibGVUaW1lb3V0KCkgY29uc3QgeyByZXR1cm4gdGhpcy0+YlBhaXJhYmxlVGltZW91dDsgfQoJdm9pZCBzZXRQYWlyYWJsZVRpbWVvdXQocXVpbnQzMiB0aW1lb3V0KTsKCglbW25vZGlzY2FyZF1dIFFCaW5kYWJsZTxRU3RyaW5nPiBiaW5kYWJsZU5hbWUoKSB7IHJldHVybiAmdGhpcy0+Yk5hbWU7IH0KCVtbbm9kaXNjYXJkXV0gUUJpbmRhYmxlPGJvb2w+IGJpbmRhYmxlRW5hYmxlZCgpIHsgcmV0dXJuICZ0aGlzLT5iRW5hYmxlZDsgfQoJW1tub2Rpc2NhcmRdXSBRQmluZGFibGU8Qmx1ZXRvb3RoQWRhcHRlclN0YXRlOjpFbnVtPiBiaW5kYWJsZVN0YXRlKCkgeyByZXR1cm4gJnRoaXMtPmJTdGF0ZTsgfQoJW1tub2Rpc2NhcmRdXSBRQmluZGFibGU8Ym9vbD4gYmluZGFibGVEaXNjb3ZlcmFibGUoKSB7IHJldHVybiAmdGhpcy0+YkRpc2NvdmVyYWJsZTsgfQoJW1tub2Rpc2NhcmRdXSBRQmluZGFibGU8cXVpbnQzMj4gYmluZGFibGVEaXNjb3ZlcmFibGVUaW1lb3V0KCkgewoJCXJldHVybiAmdGhpcy0+YkRpc2NvdmVyYWJsZVRpbWVvdXQ7Cgl9CglbW25vZGlzY2FyZF1dIFFCaW5kYWJsZTxib29sPiBiaW5kYWJsZURpc2NvdmVyaW5nKCkgeyByZXR1cm4gJnRoaXMtPmJEaXNjb3ZlcmluZzsgfQoJW1tub2Rpc2NhcmRdXSBRQmluZGFibGU8Ym9vbD4gYmluZGFibGVQYWlyYWJsZSgpIHsgcmV0dXJuICZ0aGlzLT5iUGFpcmFibGU7IH0KCVtbbm9kaXNjYXJkXV0gUUJpbmRhYmxlPHF1aW50MzI+IGJpbmRhYmxlUGFpcmFibGVUaW1lb3V0KCkgeyByZXR1cm4gJnRoaXMtPmJQYWlyYWJsZVRpbWVvdXQ7IH0KCVtbbm9kaXNjYXJkXV0gT2JqZWN0TW9kZWw8Qmx1ZXRvb3RoRGV2aWNlPiogZGV2aWNlcygpIHsgcmV0dXJuICZ0aGlzLT5tRGV2aWNlczsgfQoKCXZvaWQgYWRkSW50ZXJmYWNlKGNvbnN0IFFTdHJpbmcmIGludGVyZmFjZSwgY29uc3QgUVZhcmlhbnRNYXAmIHByb3BlcnRpZXMpOwoJdm9pZCByZW1vdmVEZXZpY2UoY29uc3QgUVN0cmluZyYgZGV2aWNlUGF0aCk7CgoJdm9pZCBzdGFydERpc2NvdmVyeSgpOwoJdm9pZCBzdG9wRGlzY292ZXJ5KCk7CgpzaWduYWxzOgoJdm9pZCBuYW1lQ2hhbmdlZCgpOwoJdm9pZCBlbmFibGVkQ2hhbmdlZCgpOwoJdm9pZCBzdGF0ZUNoYW5nZWQoKTsKCXZvaWQgZGlzY292ZXJhYmxlQ2hhbmdlZCgpOwoJdm9pZCBkaXNjb3ZlcmFibGVUaW1lb3V0Q2hhbmdlZCgpOwoJdm9pZCBkaXNjb3ZlcmluZ0NoYW5nZWQoKTsKCXZvaWQgcGFpcmFibGVDaGFuZ2VkKCk7Cgl2b2lkIHBhaXJhYmxlVGltZW91dENoYW5nZWQoKTsKCnByaXZhdGU6CglEQnVzQmx1ZXpBZGFwdGVySW50ZXJmYWNlKiBtSW50ZXJmYWNlID0gbnVsbHB0cjsKCU9iamVjdE1vZGVsPEJsdWV0b290aERldmljZT4gbURldmljZXMge3RoaXN9OwoKCS8vIGNsYW5nLWZvcm1hdCBvZmYKCVFfT0JKRUNUX0JJTkRBQkxFX1BST1BFUlRZKEJsdWV0b290aEFkYXB0ZXIsIFFTdHJpbmcsIGJOYW1lLCAmQmx1ZXRvb3RoQWRhcHRlcjo6bmFtZUNoYW5nZWQpOwoJUV9PQkpFQ1RfQklOREFCTEVfUFJPUEVSVFkoQmx1ZXRvb3RoQWRhcHRlciwgYm9vbCwgYkVuYWJsZWQsICZCbHVldG9vdGhBZGFwdGVyOjplbmFibGVkQ2hhbmdlZCk7CglRX09CSkVDVF9CSU5EQUJMRV9QUk9QRVJUWShCbHVldG9vdGhBZGFwdGVyLCBCbHVldG9vdGhBZGFwdGVyU3RhdGU6OkVudW0sIGJTdGF0ZSwgJkJsdWV0b290aEFkYXB0ZXI6OnN0YXRlQ2hhbmdlZCk7CglRX09CSkVDVF9CSU5EQUJMRV9QUk9QRVJUWShCbHVldG9vdGhBZGFwdGVyLCBib29sLCBiRGlzY292ZXJhYmxlLCAmQmx1ZXRvb3RoQWRhcHRlcjo6ZGlzY292ZXJhYmxlQ2hhbmdlZCk7CglRX09CSkVDVF9CSU5EQUJMRV9QUk9QRVJUWShCbHVldG9vdGhBZGFwdGVyLCBxdWludDMyLCBiRGlzY292ZXJhYmxlVGltZW91dCwgJkJsdWV0b290aEFkYXB0ZXI6OmRpc2NvdmVyYWJsZVRpbWVvdXRDaGFuZ2VkKTsKCVFfT0JKRUNUX0JJTkRBQkxFX1BST1BFUlRZKEJsdWV0b290aEFkYXB0ZXIsIGJvb2wsIGJEaXNjb3ZlcmluZywgJkJsdWV0b290aEFkYXB0ZXI6OmRpc2NvdmVyaW5nQ2hhbmdlZCk7CglRX09CSkVDVF9CSU5EQUJMRV9QUk9QRVJUWShCbHVldG9vdGhBZGFwdGVyLCBib29sLCBiUGFpcmFibGUsICZCbHVldG9vdGhBZGFwdGVyOjpwYWlyYWJsZUNoYW5nZWQpOwoJUV9PQkpFQ1RfQklOREFCTEVfUFJPUEVSVFkoQmx1ZXRvb3RoQWRhcHRlciwgcXVpbnQzMiwgYlBhaXJhYmxlVGltZW91dCwgJkJsdWV0b290aEFkYXB0ZXI6OnBhaXJhYmxlVGltZW91dENoYW5nZWQpOwoJCglRU19EQlVTX0JJTkRBQkxFX1BST1BFUlRZX0dST1VQKEJsdWV0b290aEFkYXB0ZXIsIHByb3BlcnRpZXMpOwoJUVNfREJVU19QUk9QRVJUWV9CSU5ESU5HKEJsdWV0b290aEFkYXB0ZXIsIHBOYW1lLCBiTmFtZSwgcHJvcGVydGllcywgIkFsaWFzIik7CgkvLyBVc2UgZXhwbGljaXQgY2FsbGJhY2sgdG8gZW5zdXJlIGVuYWJsZWRDaGFuZ2VkIGlzIGVtaXR0ZWQgd2hlbiBQb3dlcmVkIGNoYW5nZXMgdmlhIEQtQnVzCglRVF9XQVJOSU5HX1BVU0ggUVRfV0FSTklOR19ESVNBQkxFX0lOVkFMSURfT0ZGU0VUT0YKICBRU19EQlVTX1BST1BFUlRZX0JJTkRJTkdfOCgKICAgICAgQmx1ZXRvb3RoQWRhcHRlciwKICAgICAgdm9pZCwKICAgICAgcEVuYWJsZWQsCiAgICAgIGJFbmFibGVkLAogICAgICBlbmFibGVkQ2hhbmdlZCwKICAgICAgcHJvcGVydGllcywKICAgICAgIlBvd2VyZWQiLAogICAgICB0cnVlCiAgKTsKCVFUX1dBUk5JTkdfUE9QCgkvLyBVc2UgZXhwbGljaXQgY2FsbGJhY2sgdG8gZW5zdXJlIHN0YXRlQ2hhbmdlZCBpcyBlbWl0dGVkIHdoZW4gUG93ZXJTdGF0ZSBjaGFuZ2VzIHZpYSBELUJ1cwoJUVRfV0FSTklOR19QVVNIIFFUX1dBUk5JTkdfRElTQUJMRV9JTlZBTElEX09GRlNFVE9GCiAgUVNfREJVU19QUk9QRVJUWV9CSU5ESU5HXzgoCiAgICAgIEJsdWV0b290aEFkYXB0ZXIsCiAgICAgIHZvaWQsCiAgICAgIHBTdGF0ZSwKICAgICAgYlN0YXRlLAogICAgICBzdGF0ZUNoYW5nZWQsCiAgICAgIHByb3BlcnRpZXMsCiAgICAgICJQb3dlclN0YXRlIiwKICAgICAgdHJ1ZQogICk7CglRVF9XQVJOSU5HX1BPUAoJUVNfREJVU19QUk9QRVJUWV9CSU5ESU5HKEJsdWV0b290aEFkYXB0ZXIsIHBEaXNjb3ZlcmFibGUsIGJEaXNjb3ZlcmFibGUsIHByb3BlcnRpZXMsICJEaXNjb3ZlcmFibGUiKTsKCVFTX0RCVVNfUFJPUEVSVFlfQklORElORyhCbHVldG9vdGhBZGFwdGVyLCBwRGlzY292ZXJhYmxlVGltZW91dCwgYkRpc2NvdmVyYWJsZVRpbWVvdXQsIHByb3BlcnRpZXMsICJEaXNjb3ZlcmFibGVUaW1lb3V0Iik7CglRU19EQlVTX1BST1BFUlRZX0JJTkRJTkcoQmx1ZXRvb3RoQWRhcHRlciwgcERpc2NvdmVyaW5nLCBiRGlzY292ZXJpbmcsIHByb3BlcnRpZXMsICJEaXNjb3ZlcmluZyIpOwoJUVNfREJVU19QUk9QRVJUWV9CSU5ESU5HKEJsdWV0b290aEFkYXB0ZXIsIHBQYWlyYWJsZSwgYlBhaXJhYmxlLCBwcm9wZXJ0aWVzLCAiUGFpcmFibGUiKTsKCVFTX0RCVVNfUFJPUEVSVFlfQklORElORyhCbHVldG9vdGhBZGFwdGVyLCBwUGFpcmFibGVUaW1lb3V0LCBiUGFpcmFibGVUaW1lb3V0LCBwcm9wZXJ0aWVzLCAiUGFpcmFibGVUaW1lb3V0Iik7CgkvLyBjbGFuZy1mb3JtYXQgb24KfTsKCn0gLy8gbmFtZXNwYWNlIHFzOjpibHVldG9vdGgKClFEZWJ1ZyBvcGVyYXRvcjw8KFFEZWJ1ZyBkZWJ1ZywgY29uc3QgcXM6OmJsdWV0b290aDo6Qmx1ZXRvb3RoQWRhcHRlciogYWRhcHRlcik7Cg==
+#pragma once
+
+#include <qobject.h>
+#include <qqmlintegration.h>
+#include <qtmetamacros.h>
+
+#include "../core/doc.hpp"
+#include "../core/model.hpp"
+#include "../dbus/properties.hpp"
+#include "dbus_adapter.h"
+
+namespace qs::bluetooth {
+
+///! Power state of a Bluetooth adapter.
+class BluetoothAdapterState: public QObject {
+	Q_OBJECT;
+	QML_ELEMENT;
+	QML_SINGLETON;
+
+public:
+	enum Enum : quint8 {
+		/// The adapter is powered off.
+		Disabled = 0,
+		/// The adapter is powered on.
+		Enabled = 1,
+		/// The adapter is transitioning from off to on.
+		Enabling = 2,
+		/// The adapter is transitioning from on to off.
+		Disabling = 3,
+		/// The adapter is blocked by rfkill.
+		Blocked = 4,
+	};
+	Q_ENUM(Enum);
+
+	Q_INVOKABLE static QString toString(BluetoothAdapterState::Enum state);
+};
+
+} // namespace qs::bluetooth
+
+namespace qs::dbus {
+
+template <>
+struct DBusDataTransform<qs::bluetooth::BluetoothAdapterState::Enum> {
+	using Wire = QString;
+	using Data = qs::bluetooth::BluetoothAdapterState::Enum;
+	static DBusResult<Data> fromWire(const Wire& wire);
+};
+
+} // namespace qs::dbus
+
+namespace qs::bluetooth {
+
+class BluetoothAdapter;
+class BluetoothDevice;
+
+///! A Bluetooth adapter
+class BluetoothAdapter: public QObject {
+	Q_OBJECT;
+	QML_ELEMENT;
+	QML_UNCREATABLE("");
+	// clang-format off
+	/// System provided name of the adapter. See @@adapterId for the internal identifier.
+	Q_PROPERTY(QString name READ default NOTIFY nameChanged BINDABLE bindableName);
+	/// True if the adapter is currently enabled. More detailed state is available from @@state.
+	Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged);
+	/// Detailed power state of the adapter.
+	Q_PROPERTY(BluetoothAdapterState::Enum state READ default NOTIFY stateChanged BINDABLE bindableState);
+	/// True if the adapter can be discovered by other bluetooth devices.
+	Q_PROPERTY(bool discoverable READ discoverable WRITE setDiscoverable NOTIFY discoverableChanged);
+	/// Timeout in seconds for how long the adapter stays discoverable after @@discoverable is set to true.
+	/// A value of 0 means the adapter stays discoverable forever.
+	Q_PROPERTY(quint32 discoverableTimeout READ discoverableTimeout WRITE setDiscoverableTimeout NOTIFY discoverableTimeoutChanged);
+	/// True if the adapter is scanning for new devices.
+	Q_PROPERTY(bool discovering READ discovering WRITE setDiscovering NOTIFY discoveringChanged);
+	/// True if the adapter is accepting incoming pairing requests.
+	///
+	/// This only affects incoming pairing requests and should typically only be changed
+	/// by system settings applications. Defaults to true.
+	Q_PROPERTY(bool pairable READ pairable WRITE setPairable NOTIFY pairableChanged);
+	/// Timeout in seconds for how long the adapter stays pairable after @@pairable is set to true.
+	/// A value of 0 means the adapter stays pairable forever. Defaults to 0.
+	Q_PROPERTY(quint32 pairableTimeout READ pairableTimeout WRITE setPairableTimeout NOTIFY pairableTimeoutChanged);
+	/// Bluetooth devices connected to this adapter.
+	QSDOC_TYPE_OVERRIDE(ObjectModel<qs::bluetooth::BluetoothDevice>*);
+	Q_PROPERTY(UntypedObjectModel* devices READ devices CONSTANT);
+	/// The internal ID of the adapter (e.g., "hci0").
+	Q_PROPERTY(QString adapterId READ adapterId CONSTANT);
+	/// DBus path of the adapter under the `org.bluez` system service.
+	Q_PROPERTY(QString dbusPath READ path CONSTANT);
+	// clang-format on
+
+public:
+	explicit BluetoothAdapter(const QString& path, QObject* parent = nullptr);
+
+	[[nodiscard]] bool isValid() const { return this->mInterface->isValid(); }
+	[[nodiscard]] QString path() const { return this->mInterface->path(); }
+	[[nodiscard]] QString adapterId() const;
+
+	[[nodiscard]] bool enabled() const { return this->bEnabled; }
+	void setEnabled(bool enabled);
+
+	[[nodiscard]] bool discoverable() const { return this->bDiscoverable; }
+	void setDiscoverable(bool discoverable);
+
+	[[nodiscard]] bool discovering() const { return this->bDiscovering; }
+	void setDiscovering(bool discovering);
+
+	[[nodiscard]] quint32 discoverableTimeout() const { return this->bDiscoverableTimeout; }
+	void setDiscoverableTimeout(quint32 timeout);
+
+	[[nodiscard]] bool pairable() const { return this->bPairable; }
+	void setPairable(bool pairable);
+
+	[[nodiscard]] quint32 pairableTimeout() const { return this->bPairableTimeout; }
+	void setPairableTimeout(quint32 timeout);
+
+	[[nodiscard]] QBindable<QString> bindableName() { return &this->bName; }
+	[[nodiscard]] QBindable<bool> bindableEnabled() { return &this->bEnabled; }
+	[[nodiscard]] QBindable<BluetoothAdapterState::Enum> bindableState() { return &this->bState; }
+	[[nodiscard]] QBindable<bool> bindableDiscoverable() { return &this->bDiscoverable; }
+	[[nodiscard]] QBindable<quint32> bindableDiscoverableTimeout() {
+		return &this->bDiscoverableTimeout;
+	}
+	[[nodiscard]] QBindable<bool> bindableDiscovering() { return &this->bDiscovering; }
+	[[nodiscard]] QBindable<bool> bindablePairable() { return &this->bPairable; }
+	[[nodiscard]] QBindable<quint32> bindablePairableTimeout() { return &this->bPairableTimeout; }
+	[[nodiscard]] ObjectModel<BluetoothDevice>* devices() { return &this->mDevices; }
+
+	void addInterface(const QString& interface, const QVariantMap& properties);
+	void removeDevice(const QString& devicePath);
+
+	void startDiscovery();
+	void stopDiscovery();
+
+signals:
+	void nameChanged();
+	void enabledChanged();
+	void stateChanged();
+	void discoverableChanged();
+	void discoverableTimeoutChanged();
+	void discoveringChanged();
+	void pairableChanged();
+	void pairableTimeoutChanged();
+
+private:
+	DBusBluezAdapterInterface* mInterface = nullptr;
+	ObjectModel<BluetoothDevice> mDevices {this};
+
+	// clang-format off
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, QString, bName, &BluetoothAdapter::nameChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, bool, bEnabled, &BluetoothAdapter::enabledChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, BluetoothAdapterState::Enum, bState, &BluetoothAdapter::stateChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, bool, bDiscoverable, &BluetoothAdapter::discoverableChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, quint32, bDiscoverableTimeout, &BluetoothAdapter::discoverableTimeoutChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, bool, bDiscovering, &BluetoothAdapter::discoveringChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, bool, bPairable, &BluetoothAdapter::pairableChanged);
+	Q_OBJECT_BINDABLE_PROPERTY(BluetoothAdapter, quint32, bPairableTimeout, &BluetoothAdapter::pairableTimeoutChanged);
+	
+	QS_DBUS_BINDABLE_PROPERTY_GROUP(BluetoothAdapter, properties);
+	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pName, bName, properties, "Alias");
+	// Use explicit callback to ensure enabledChanged is emitted when Powered changes via D-Bus
+	QT_WARNING_PUSH QT_WARNING_DISABLE_INVALID_OFFSETOF
+  QS_DBUS_PROPERTY_BINDING_8(
+      BluetoothAdapter,
+      void,
+      pEnabled,
+      bEnabled,
+      enabledChanged,
+      properties,
+      "Powered",
+      true
+  );
+	QT_WARNING_POP
+	// Use explicit callback to ensure stateChanged is emitted when PowerState changes via D-Bus
+	QT_WARNING_PUSH QT_WARNING_DISABLE_INVALID_OFFSETOF
+  QS_DBUS_PROPERTY_BINDING_8(
+      BluetoothAdapter,
+      void,
+      pState,
+      bState,
+      stateChanged,
+      properties,
+      "PowerState",
+      true
+  );
+	QT_WARNING_POP
+	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pDiscoverable, bDiscoverable, properties, "Discoverable");
+	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pDiscoverableTimeout, bDiscoverableTimeout, properties, "DiscoverableTimeout");
+	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pDiscovering, bDiscovering, properties, "Discovering");
+	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pPairable, bPairable, properties, "Pairable");
+	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pPairableTimeout, bPairableTimeout, properties, "PairableTimeout");
+	// clang-format on
+};
+
+} // namespace qs::bluetooth
+
+QDebug operator<<(QDebug debug, const qs::bluetooth::BluetoothAdapter* adapter);
