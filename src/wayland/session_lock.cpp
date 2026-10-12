@@ -1,1 +1,374 @@
-I2luY2x1ZGUgInNlc3Npb25fbG9jay5ocHAiCgojaW5jbHVkZSA8cHJpdmF0ZS9xd2F5bGFuZHNjcmVlbl9wLmg+CiNpbmNsdWRlIDxxY29sb3IuaD4KI2luY2x1ZGUgPHFjb3JlYXBwbGljYXRpb24uaD4KI2luY2x1ZGUgPHFndWlhcHBsaWNhdGlvbi5oPgojaW5jbHVkZSA8cWxvZ2dpbmcuaD4KI2luY2x1ZGUgPHFvYmplY3QuaD4KI2luY2x1ZGUgPHFxbWxjb21wb25lbnQuaD4KI2luY2x1ZGUgPHFxbWxlbmdpbmUuaD4KI2luY2x1ZGUgPHFxbWxsaXN0Lmg+CiNpbmNsdWRlIDxxcXVpY2tncmFwaGljc2NvbmZpZ3VyYXRpb24uaD4KI2luY2x1ZGUgPHFxdWlja2l0ZW0uaD4KI2luY2x1ZGUgPHFxdWlja3dpbmRvdy5oPgojaW5jbHVkZSA8cXNjcmVlbi5oPgojaW5jbHVkZSA8cXRtZXRhbWFjcm9zLmg+CiNpbmNsdWRlIDxxdHlwZXMuaD4KCiNpbmNsdWRlICIuLi9jb3JlL3FtbGdsb2JhbC5ocHAiCiNpbmNsdWRlICIuLi9jb3JlL3FtbHNjcmVlbi5ocHAiCiNpbmNsdWRlICIuLi9jb3JlL3JlbG9hZC5ocHAiCiNpbmNsdWRlICIuLi93aW5kb3cvcHJveHl3aW5kb3cuaHBwIgojaW5jbHVkZSAic2Vzc2lvbl9sb2NrL3Nlc3Npb25fbG9jay5ocHAiCgpXbFNlc3Npb25Mb2NrOjp+V2xTZXNzaW9uTG9jaygpIHsKCWlmICh0aGlzLT5pc0xvY2tlZCgpKSB7CgkJcUNyaXRpY2FsKCkgPDwgIlNlc3Npb24gbG9jayBvYmplY3Qgd2FzIGRlc3Ryb3llZCB3aXRob3V0IHVubG9ja2luZy4gVGhlIHNlc3Npb24gd2lsbCBzdGF5ICIKCQkgICAgICAgICAgICAgICAibG9ja2VkIGluIGNhc2UgdGhpcyB3YXMgYWNjaWRlbnRhbC4iOwoJCXFDcml0aWNhbCgpIDw8ICJDb21wb25lbnQub25EZXN0cnVjdGlvbiBtYXkgYmUgdXNlZCBpZiB0aGlzIGJlaGF2aW9yIGlzIHJlcXVpcmVkLCBidXQgaXQgbWF5ICIKCQkgICAgICAgICAgICAgICAicmVzdWx0IGluIGEgbG9jayBmYWlsaW5nIG9wZW4uIjsKCX0KfQoKdm9pZCBXbFNlc3Npb25Mb2NrOjpvblJlbG9hZChRT2JqZWN0KiBvbGRJbnN0YW5jZSkgewoJYXV0byogb2xkID0gcW9iamVjdF9jYXN0PFdsU2Vzc2lvbkxvY2sqPihvbGRJbnN0YW5jZSk7CgoJaWYgKG9sZCAhPSBudWxscHRyKSB7CgkJUU9iamVjdDo6ZGlzY29ubmVjdChvbGQtPm1hbmFnZXIsIG51bGxwdHIsIG9sZCwgbnVsbHB0cik7CgkJdGhpcy0+bWFuYWdlciA9IG9sZC0+bWFuYWdlcjsKCQl0aGlzLT5tYW5hZ2VyLT5zZXRQYXJlbnQodGhpcyk7Cgl9IGVsc2UgewoJCXRoaXMtPm1hbmFnZXIgPSBuZXcgU2Vzc2lvbkxvY2tNYW5hZ2VyKHRoaXMpOwoJfQoKCS8vIGNsYW5nLWZvcm1hdCBvZmYKCVFPYmplY3Q6OmNvbm5lY3QodGhpcy0+bWFuYWdlciwgJlNlc3Npb25Mb2NrTWFuYWdlcjo6bG9ja2VkLCB0aGlzLCAmV2xTZXNzaW9uTG9jazo6c2VjdXJlU3RhdGVDaGFuZ2VkKTsKCVFPYmplY3Q6OmNvbm5lY3QodGhpcy0+bWFuYWdlciwgJlNlc3Npb25Mb2NrTWFuYWdlcjo6dW5sb2NrZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrOjpzZWN1cmVTdGF0ZUNoYW5nZWQpOwoKCVFPYmplY3Q6OmNvbm5lY3QodGhpcy0+bWFuYWdlciwgJlNlc3Npb25Mb2NrTWFuYWdlcjo6dW5sb2NrZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrOjp1bmxvY2spOwoKCWF1dG8qIGFwcCA9IFFDb3JlQXBwbGljYXRpb246Omluc3RhbmNlKCk7CglhdXRvKiBndWlBcHAgPSBxb2JqZWN0X2Nhc3Q8UUd1aUFwcGxpY2F0aW9uKj4oYXBwKTsKCglpZiAoZ3VpQXBwICE9IG51bGxwdHIpIHsKCQlRT2JqZWN0Ojpjb25uZWN0KGd1aUFwcCwgJlFHdWlBcHBsaWNhdGlvbjo6cHJpbWFyeVNjcmVlbkNoYW5nZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrOjpvblNjcmVlbnNDaGFuZ2VkKTsKCQlRT2JqZWN0Ojpjb25uZWN0KGd1aUFwcCwgJlFHdWlBcHBsaWNhdGlvbjo6c2NyZWVuQWRkZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrOjpvblNjcmVlbnNDaGFuZ2VkKTsKCQlRT2JqZWN0Ojpjb25uZWN0KGd1aUFwcCwgJlFHdWlBcHBsaWNhdGlvbjo6c2NyZWVuUmVtb3ZlZCwgdGhpcywgJldsU2Vzc2lvbkxvY2s6Om9uU2NyZWVuc0NoYW5nZWQpOwoJfQoJLy8gY2xhbmctZm9ybWF0IG9uCgoJdGhpcy0+cmVhbGl6ZUxvY2tUYXJnZXQob2xkKTsKfQoKdm9pZCBXbFNlc3Npb25Mb2NrOjp1cGRhdGVTdXJmYWNlcyhib29sIHNob3csIFdsU2Vzc2lvbkxvY2sqIG9sZCkgewoJYXV0byBzY3JlZW5zID0gUUd1aUFwcGxpY2F0aW9uOjpzY3JlZW5zKCk7CgoJc2NyZWVucy5yZW1vdmVJZihbXShRU2NyZWVuKiBzY3JlZW4pIHsKCQlhdXRvKiB3YXlsYW5kU2NyZWVuID0gZHluYW1pY19jYXN0PFF0V2F5bGFuZENsaWVudDo6UVdheWxhbmRTY3JlZW4qPihzY3JlZW4tPmhhbmRsZSgpKTsKCQlpZiAod2F5bGFuZFNjcmVlbiA9PSBudWxscHRyIHx8IHdheWxhbmRTY3JlZW4tPmlzUGxhY2Vob2xkZXIoKQoJCSAgICB8fCB3YXlsYW5kU2NyZWVuLT5vdXRwdXQoKSA9PSBudWxscHRyKQoJCXsKCQkJcURlYnVnKCkgPDwgIk5vdCBjcmVhdGluZyBsb2NrIHN1cmZhY2UgZm9yIHNjcmVlbiIgPDwgc2NyZWVuCgkJCSAgICAgICAgIDw8ICJhcyBpdCBpcyBub3QgYmFja2VkIGJ5IGEgdmFsaWQgd2F5bGFuZCBvdXRwdXQuIjsKCgkJCXJldHVybiB0cnVlOwoJCX0KCgkJcmV0dXJuIGZhbHNlOwoJfSk7CgoJYXV0byBtYXAgPSB0aGlzLT5zdXJmYWNlcy50b1N0ZE1hcCgpOwoJZm9yIChhdXRvJiBbc2NyZWVuLCBzdXJmYWNlXTogbWFwKSB7CgkJaWYgKCFzY3JlZW5zLmNvbnRhaW5zKHNjcmVlbikpIHsKCQkJdGhpcy0+c3VyZmFjZXMucmVtb3ZlKHNjcmVlbik7CgkJCXN1cmZhY2UtPmRlbGV0ZUxhdGVyKCk7CgkJfQoJfQoKCWZvciAoYXV0byogc2NyZWVuOiBzY3JlZW5zKSB7CgkJaWYgKCF0aGlzLT5zdXJmYWNlcy5jb250YWlucyhzY3JlZW4pKSB7CgkJCWF1dG8qIGluc3RhbmNlT2JqID0KCQkJICAgIHRoaXMtPm1TdXJmYWNlQ29tcG9uZW50LT5jcmVhdGUoUVFtbEVuZ2luZTo6Y29udGV4dEZvck9iamVjdCh0aGlzLT5tU3VyZmFjZUNvbXBvbmVudCkpOwoJCQlhdXRvKiBpbnN0YW5jZSA9IHFvYmplY3RfY2FzdDxXbFNlc3Npb25Mb2NrU3VyZmFjZSo+KGluc3RhbmNlT2JqKTsKCgkJCWlmIChpbnN0YW5jZSA9PSBudWxscHRyKSB7CgkJCQlxV2FybmluZygpCgkJCQkgICAgPDwgIldsU2Vzc2lvbkxvY2suc3VyZmFjZSBkb2VzIG5vdCBjcmVhdGUgYSBXbFNlc3Npb25Mb2NrU3VyZmFjZS4gQWJvcnRpbmcgbG9jay4iOwoJCQkJaWYgKGluc3RhbmNlT2JqICE9IG51bGxwdHIpIGluc3RhbmNlT2JqLT5kZWxldGVMYXRlcigpOwoJCQkJdGhpcy0+dW5sb2NrKCk7CgkJCQlyZXR1cm47CgkJCX0KCgkJCWluc3RhbmNlLT5zZXRQYXJlbnQodGhpcyk7CgkJCWluc3RhbmNlLT5zZXRTY3JlZW4oc2NyZWVuKTsKCgkJCWF1dG8qIG9sZEluc3RhbmNlID0gb2xkID09IG51bGxwdHIgPyBudWxscHRyIDogb2xkLT5zdXJmYWNlcy52YWx1ZShzY3JlZW4sIG51bGxwdHIpOwoJCQlpbnN0YW5jZS0+cmVsb2FkKG9sZEluc3RhbmNlKTsKCgkJCXRoaXMtPnN1cmZhY2VzW3NjcmVlbl0gPSBpbnN0YW5jZTsKCQl9Cgl9CgoJaWYgKHNob3cpIHsKCQlpZiAoIXRoaXMtPm1hbmFnZXItPmlzTG9ja2VkKCkpIHsKCQkJcUZhdGFsKCkgPDwgIlRyaWVkIHRvIHNob3cgbG9ja3NjcmVlbiBzdXJmYWNlcyB3aXRob3V0IGFjdGl2ZSBsb2NrIjsKCQl9CgoJCWZvciAoYXV0byogc3VyZmFjZTogdGhpcy0+c3VyZmFjZXMudmFsdWVzKCkpIHsKCQkJc3VyZmFjZS0+c2hvdygpOwoJCX0KCX0KfQoKdm9pZCBXbFNlc3Npb25Mb2NrOjpyZWFsaXplTG9ja1RhcmdldChXbFNlc3Npb25Mb2NrKiBvbGQpIHsKCWlmICh0aGlzLT5yZWFsaXppbmcgfHwgIXRoaXMtPm1hbmFnZXIpIHsKCQl0aGlzLT5hd2FpdGluZ1JlYWxpemF0aW9uID0gdHJ1ZTsKCQlyZXR1cm47Cgl9CgoJdGhpcy0+cmVhbGl6aW5nID0gdHJ1ZTsKCglbJiwgdGhpc10oKSB7CgkJaWYgKHRoaXMtPmxvY2tUYXJnZXQpIHsKCQkJaWYgKCFTZXNzaW9uTG9ja01hbmFnZXI6OmxvY2tBdmFpbGFibGUoKSkgewoJCQkJcUNyaXRpY2FsKCkgPDwgIkNhbm5vdCBzdGFydCBzZXNzaW9uIGxvY2s6IFRoZSBjdXJyZW50IGNvbXBvc2l0b3IgZG9lcyBub3Qgc3VwcG9ydCB0aGUgIgoJCQkJICAgICAgICAgICAgICAgImV4dC1zZXNzaW9uLWxvY2stdjEgcHJvdG9jb2wuIjsKCQkJCXRoaXMtPnVubG9jaygpOwoJCQkJcmV0dXJuOwoJCQl9CgoJCQlpZiAodGhpcy0+bVN1cmZhY2VDb21wb25lbnQgPT0gbnVsbHB0cikgewoJCQkJcVdhcm5pbmcoKSA8PCAiV2xTZXNzaW9uTG9jay5zdXJmYWNlIGlzIG51bGwuIEFib3J0aW5nIGxvY2suIjsKCQkJCXRoaXMtPnVubG9jaygpOwoJCQkJcmV0dXJuOwoJCQl9CgoJCQkvLyBwcmVsb2FkIGluaXRpYWwgc3VyZmFjZXMgdG8gbWFrZSB0aGUgY2hhbmNlIG9mIHRoZSBjb21wb3NpdG9yIGRpc3BsYXlpbmcgYSBibGFuawoJCQkvLyBmcmFtZSBiZWZvcmUgdGhlIGxvY2sgc3VyZmFjZXMgYXJlIHNob3duIGFzIGxvdyBhcyBwb3NzaWJsZS4KCQkJdGhpcy0+dXBkYXRlU3VyZmFjZXMoZmFsc2UpOwoKCQkJYXV0byB3YXNMb2NrZWQgPSB0aGlzLT5pc0xvY2tlZCgpOwoJCQlpZiAoIXRoaXMtPm1hbmFnZXItPmxvY2soKSkgewoJCQkJcVdhcm5pbmcoKSA8PCAiRmFpbGVkIHRvIGFjcXVpcmUgc2Vzc2lvbiBsb2NrLiI7CgkJCQl0aGlzLT51bmxvY2soKTsKCQkJCXJldHVybjsKCQkJfQoKCQkJdGhpcy0+dXBkYXRlU3VyZmFjZXModHJ1ZSwgb2xkKTsKCQkJaWYgKCF3YXNMb2NrZWQpIGVtaXQgdGhpcy0+bG9ja1N0YXRlQ2hhbmdlZCgpOwoJCX0gZWxzZSB7CgkJCXRoaXMtPnVubG9jaygpOyAvLyBlbWl0cyBsb2NrU3RhdGVDaGFuZ2VkCgkJfQoJfSgpOwoKCXRoaXMtPnJlYWxpemluZyA9IGZhbHNlOwoKCWlmICh0aGlzLT5hd2FpdGluZ1JlYWxpemF0aW9uKSB7CgkJdGhpcy0+YXdhaXRpbmdSZWFsaXphdGlvbiA9IGZhbHNlOwoJCXRoaXMtPnJlYWxpemVMb2NrVGFyZ2V0KCk7Cgl9Cn0KCnZvaWQgV2xTZXNzaW9uTG9jazo6dW5sb2NrKCkgewoJdGhpcy0+bG9ja1RhcmdldCA9IGZhbHNlOwoKCWZvciAoYXV0byogc3VyZmFjZTogdGhpcy0+c3VyZmFjZXMpIHsKCQlzdXJmYWNlLT5kZWxldGVMYXRlcigpOwoJfQoKCXRoaXMtPnN1cmZhY2VzLmNsZWFyKCk7CgoJLy8gQ2FwdHVyZSB0aGUgc3RhdGUgYmVmb3JlIHVubG9ja2luZzogbWFuYWdlci0+dW5sb2NrKCkgY2xlYXJzIHRoZSBsb2NrCgkvLyBzeW5jaHJvbm91c2x5LCBzbyBjaGVja2luZyBpc0xvY2tlZCgpIGFmdGVyd2FyZHMgKGFzIGJlZm9yZSkgY291bGQgbmV2ZXIKCS8vIG9ic2VydmUgdGhlIHRyYW5zaXRpb24gYW5kIGxvY2tTdGF0ZUNoYW5nZWQgd2FzIG5ldmVyIGVtaXR0ZWQgb24gdW5sb2NrLgoJLy8gUU1MIGJpbmRpbmdzIG9uIFdsU2Vzc2lvbkxvY2subG9ja2VkIHRoZW4gc3RheWVkIHRydWUgZm9yZXZlciwgbWFraW5nCgkvLyBldmVyeSBsYXRlciBsb2NrKCkgY2FsbCBhIG5vLW9wLgoJYXV0byB3YXNMb2NrZWQgPSB0aGlzLT5pc0xvY2tlZCgpOwoJaWYgKHRoaXMtPm1hbmFnZXIpIHRoaXMtPm1hbmFnZXItPnVubG9jaygpOwoJaWYgKHdhc0xvY2tlZCkgZW1pdCB0aGlzLT5sb2NrU3RhdGVDaGFuZ2VkKCk7Cn0KCnZvaWQgV2xTZXNzaW9uTG9jazo6b25TY3JlZW5zQ2hhbmdlZCgpIHsKCS8vIFRoZW9yZXRpY2FsbHkgc2NyZWVucyBzaG91bGRudCBiZSBpbnZhbGlkYXRlZCB3aGlsZSByZWFsaXppbmcsIGluc3RlYWQgaW4gbGF0ZXIgZXZlbnQgbG9vcCBjeWNsZXMuCglpZiAodGhpcy0+aXNMb2NrZWQoKSAmJiAhdGhpcy0+cmVhbGl6aW5nKSB7CgkJdGhpcy0+dXBkYXRlU3VyZmFjZXModHJ1ZSk7Cgl9Cn0KCmJvb2wgV2xTZXNzaW9uTG9jazo6aXNMb2NrZWQoKSBjb25zdCB7IHJldHVybiB0aGlzLT5tYW5hZ2VyICYmIHRoaXMtPm1hbmFnZXItPmlzTG9ja2VkKCk7IH0KCmJvb2wgV2xTZXNzaW9uTG9jazo6aXNTZWN1cmUoKSBjb25zdCB7CglyZXR1cm4gdGhpcy0+bWFuYWdlciAhPSBudWxscHRyICYmIFNlc3Npb25Mb2NrTWFuYWdlcjo6aXNTZWN1cmUoKTsKfQoKdm9pZCBXbFNlc3Npb25Mb2NrOjpzZXRMb2NrZWQoYm9vbCBsb2NrZWQpIHsKCWlmICh0aGlzLT5sb2NrVGFyZ2V0ID09IGxvY2tlZCkgcmV0dXJuOwoJdGhpcy0+bG9ja1RhcmdldCA9IGxvY2tlZDsKCgl0aGlzLT5yZWFsaXplTG9ja1RhcmdldCgpOwp9CgpRUW1sQ29tcG9uZW50KiBXbFNlc3Npb25Mb2NrOjpzdXJmYWNlQ29tcG9uZW50KCkgY29uc3QgeyByZXR1cm4gdGhpcy0+bVN1cmZhY2VDb21wb25lbnQ7IH0KCnZvaWQgV2xTZXNzaW9uTG9jazo6c2V0U3VyZmFjZUNvbXBvbmVudChRUW1sQ29tcG9uZW50KiBzdXJmYWNlQ29tcG9uZW50KSB7CglpZiAodGhpcy0+bWFuYWdlciAhPSBudWxscHRyICYmIHRoaXMtPm1hbmFnZXItPmlzTG9ja2VkKCkpIHsKCQlxQ3JpdGljYWwoKSA8PCAiV2xTZXNzaW9uTG9jay5zdXJmYWNlQ29tcG9uZW50IGNhbm5vdCBiZSBjaGFuZ2VkIHdoaWxlIHRoZSBsb2NrIGlzIGFjdGl2ZS4iOwoJCXJldHVybjsKCX0KCglpZiAodGhpcy0+bVN1cmZhY2VDb21wb25lbnQgIT0gbnVsbHB0cikgdGhpcy0+bVN1cmZhY2VDb21wb25lbnQtPmRlbGV0ZUxhdGVyKCk7CglpZiAoc3VyZmFjZUNvbXBvbmVudCAhPSBudWxscHRyKSBzdXJmYWNlQ29tcG9uZW50LT5zZXRQYXJlbnQodGhpcyk7CgoJdGhpcy0+bVN1cmZhY2VDb21wb25lbnQgPSBzdXJmYWNlQ29tcG9uZW50OwoJZW1pdCB0aGlzLT5zdXJmYWNlQ29tcG9uZW50Q2hhbmdlZCgpOwp9CgpXbFNlc3Npb25Mb2NrU3VyZmFjZTo6V2xTZXNzaW9uTG9ja1N1cmZhY2UoUU9iamVjdCogcGFyZW50KQogICAgOiBSZWxvYWRhYmxlKHBhcmVudCkKICAgICwgbUNvbnRlbnRJdGVtKG5ldyBRUXVpY2tJdGVtKCkpCiAgICAsIGV4dChuZXcgTG9ja1dpbmRvd0V4dGVuc2lvbih0aGlzKSkgewoJUVFtbEVuZ2luZTo6c2V0T2JqZWN0T3duZXJzaGlwKHRoaXMtPm1Db250ZW50SXRlbSwgUVFtbEVuZ2luZTo6Q3BwT3duZXJzaGlwKTsKCXRoaXMtPm1Db250ZW50SXRlbS0+c2V0UGFyZW50KHRoaXMpOwoKCS8vIGNsYW5nLWZvcm1hdCBvZmYKCVFPYmplY3Q6OmNvbm5lY3QodGhpcywgJldsU2Vzc2lvbkxvY2tTdXJmYWNlOjp3aWR0aENoYW5nZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrU3VyZmFjZTo6b25XaWR0aENoYW5nZWQpOwoJUU9iamVjdDo6Y29ubmVjdCh0aGlzLCAmV2xTZXNzaW9uTG9ja1N1cmZhY2U6OmhlaWdodENoYW5nZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrU3VyZmFjZTo6b25IZWlnaHRDaGFuZ2VkKTsKCS8vIGNsYW5nLWZvcm1hdCBvbgp9CgpXbFNlc3Npb25Mb2NrU3VyZmFjZTo6fldsU2Vzc2lvbkxvY2tTdXJmYWNlKCkgewoJaWYgKHRoaXMtPndpbmRvdyAhPSBudWxscHRyKSB7CgkJdGhpcy0+d2luZG93LT5kZXN0cm95KCk7CgkJdGhpcy0+d2luZG93LT5kZWxldGVMYXRlcigpOwoJfQp9Cgp2b2lkIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjpvblJlbG9hZChRT2JqZWN0KiBvbGRJbnN0YW5jZSkgewoJaWYgKGF1dG8qIG9sZCA9IHFvYmplY3RfY2FzdDxXbFNlc3Npb25Mb2NrU3VyZmFjZSo+KG9sZEluc3RhbmNlKSkgewoJCXRoaXMtPndpbmRvdyA9IG9sZC0+ZGlzb3duV2luZG93KCk7Cgl9CgoJaWYgKHRoaXMtPndpbmRvdyA9PSBudWxscHRyKSB7CgkJdGhpcy0+d2luZG93ID0gbmV3IFFzUXVpY2tXaW5kb3dCYXNlKCk7CgoJCS8vIG5lZWRlZCBmb3IgdnVsa2FuIGRtYWJ1ZiBpbXBvcnQsIHF0IGlnbm9yZXMgdGhlc2UgaWYgbm90IGFwcGxpY2FibGUKCQlhdXRvIGdyYXBoaWNzQ29uZmlnID0gdGhpcy0+d2luZG93LT5ncmFwaGljc0NvbmZpZ3VyYXRpb24oKTsKCQlncmFwaGljc0NvbmZpZy5zZXREZXZpY2VFeHRlbnNpb25zKHsKCQkgICAgIlZLX0tIUl9leHRlcm5hbF9tZW1vcnlfZmQiLAoJCSAgICAiVktfRVhUX2V4dGVybmFsX21lbW9yeV9kbWFfYnVmIiwKCQkgICAgIlZLX0VYVF9pbWFnZV9kcm1fZm9ybWF0X21vZGlmaWVyIiwKCQl9KTsKCQl0aGlzLT53aW5kb3ctPnNldEdyYXBoaWNzQ29uZmlndXJhdGlvbihncmFwaGljc0NvbmZpZyk7Cgl9CgoJdGhpcy0+bUNvbnRlbnRJdGVtLT5zZXRQYXJlbnRJdGVtKHRoaXMtPndpbmRvdy0+Y29udGVudEl0ZW0oKSk7CgoJdGhpcy0+bUNvbnRlbnRJdGVtLT5zZXRXaWR0aCh0aGlzLT53aWR0aCgpKTsKCXRoaXMtPm1Db250ZW50SXRlbS0+c2V0SGVpZ2h0KHRoaXMtPmhlaWdodCgpKTsKCglpZiAodGhpcy0+bVNjcmVlbiAhPSBudWxscHRyKSB0aGlzLT53aW5kb3ctPnNldFNjcmVlbih0aGlzLT5tU2NyZWVuKTsKCXRoaXMtPndpbmRvdy0+c2V0Q29sb3IodGhpcy0+bUNvbG9yKTsKCgkvLyBjbGFuZy1mb3JtYXQgb2ZmCglRT2JqZWN0Ojpjb25uZWN0KHRoaXMtPndpbmRvdywgJlFXaW5kb3c6OnZpc2liaWxpdHlDaGFuZ2VkLCB0aGlzLCAmV2xTZXNzaW9uTG9ja1N1cmZhY2U6OnZpc2libGVDaGFuZ2VkKTsKCVFPYmplY3Q6OmNvbm5lY3QodGhpcy0+d2luZG93LCAmUVdpbmRvdzo6d2lkdGhDaGFuZ2VkLCB0aGlzLCAmV2xTZXNzaW9uTG9ja1N1cmZhY2U6OndpZHRoQ2hhbmdlZCk7CglRT2JqZWN0Ojpjb25uZWN0KHRoaXMtPndpbmRvdywgJlFXaW5kb3c6OmhlaWdodENoYW5nZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrU3VyZmFjZTo6aGVpZ2h0Q2hhbmdlZCk7CglRT2JqZWN0Ojpjb25uZWN0KHRoaXMtPndpbmRvdywgJlFXaW5kb3c6OnNjcmVlbkNoYW5nZWQsIHRoaXMsICZXbFNlc3Npb25Mb2NrU3VyZmFjZTo6c2NyZWVuQ2hhbmdlZCk7CglRT2JqZWN0Ojpjb25uZWN0KHRoaXMtPndpbmRvdywgJlFRdWlja1dpbmRvdzo6Y29sb3JDaGFuZ2VkLCB0aGlzLCAmV2xTZXNzaW9uTG9ja1N1cmZhY2U6OmNvbG9yQ2hhbmdlZCk7CgkvLyBjbGFuZy1mb3JtYXQgb24KfQoKdm9pZCBXbFNlc3Npb25Mb2NrU3VyZmFjZTo6YXR0YWNoKCkgewoJaWYgKHRoaXMtPmV4dC0+aXNBdHRhY2hlZCgpKSByZXR1cm47CgoJaWYgKGF1dG8qIHBhcmVudCA9IHFvYmplY3RfY2FzdDxXbFNlc3Npb25Mb2NrKj4odGhpcy0+cGFyZW50KCkpKSB7CgkJaWYgKCF0aGlzLT5leHQtPmF0dGFjaCh0aGlzLT53aW5kb3csIHBhcmVudC0+bWFuYWdlcikpIHsKCQkJcUZhdGFsKCkgPDwgIkZhaWxlZCB0byBhdHRhY2ggV2xTZXNzaW9uTG9ja1N1cmZhY2UiOwoJCX0KCX0gZWxzZSB7CgkJcUZhdGFsKCkgPDwgIlRyaWVkIHRvIGF0dGFjaCBhIFdsU2Vzc2lvbkxvY2tTdXJmYWNlIHdob3NlIHBhcmVudCBpcyBub3QgYSBXbFNlc3Npb25Mb2NrIjsKCX0KfQoKUVF1aWNrV2luZG93KiBXbFNlc3Npb25Mb2NrU3VyZmFjZTo6ZGlzb3duV2luZG93KCkgewoJUU9iamVjdDo6ZGlzY29ubmVjdCh0aGlzLT53aW5kb3csIG51bGxwdHIsIHRoaXMsIG51bGxwdHIpOwoJdGhpcy0+bUNvbnRlbnRJdGVtLT5zZXRQYXJlbnRJdGVtKG51bGxwdHIpOwoKCWF1dG8qIHdpbmRvdyA9IHRoaXMtPndpbmRvdzsKCXRoaXMtPndpbmRvdyA9IG51bGxwdHI7CglyZXR1cm4gd2luZG93Owp9Cgp2b2lkIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjpzaG93KCkgewoJdGhpcy0+YXR0YWNoKCk7Cgl0aGlzLT5leHQtPnNldFZpc2libGUoKTsKfQoKUVF1aWNrSXRlbSogV2xTZXNzaW9uTG9ja1N1cmZhY2U6OmNvbnRlbnRJdGVtKCkgY29uc3QgeyByZXR1cm4gdGhpcy0+bUNvbnRlbnRJdGVtOyB9Cgpib29sIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjppc1Zpc2libGUoKSBjb25zdCB7CglpZiAodGhpcy0+d2luZG93ID09IG51bGxwdHIpIHJldHVybiBmYWxzZTsKCXJldHVybiB0aGlzLT53aW5kb3ctPmlzVmlzaWJsZSgpOwp9CgpxaW50MzIgV2xTZXNzaW9uTG9ja1N1cmZhY2U6OndpZHRoKCkgY29uc3QgewoJaWYgKHRoaXMtPndpbmRvdyA9PSBudWxscHRyKSByZXR1cm4gMDsKCWVsc2UgcmV0dXJuIHRoaXMtPndpbmRvdy0+d2lkdGgoKTsKfQoKcWludDMyIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjpoZWlnaHQoKSBjb25zdCB7CglpZiAodGhpcy0+d2luZG93ID09IG51bGxwdHIpIHJldHVybiAwOwoJZWxzZSByZXR1cm4gdGhpcy0+d2luZG93LT5oZWlnaHQoKTsKfQoKUXVpY2tzaGVsbFNjcmVlbkluZm8qIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjpzY3JlZW4oKSBjb25zdCB7CglRU2NyZWVuKiBxc2NyZWVuID0gbnVsbHB0cjsKCglpZiAodGhpcy0+d2luZG93ID09IG51bGxwdHIpIHsKCQlpZiAodGhpcy0+bVNjcmVlbiAhPSBudWxscHRyKSBxc2NyZWVuID0gdGhpcy0+bVNjcmVlbjsKCX0gZWxzZSB7CgkJcXNjcmVlbiA9IHRoaXMtPndpbmRvdy0+c2NyZWVuKCk7Cgl9CgoJcmV0dXJuIFF1aWNrc2hlbGxUcmFja2VkOjppbnN0YW5jZSgpLT5zY3JlZW5JbmZvKHFzY3JlZW4pOwp9Cgp2b2lkIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjpzZXRTY3JlZW4oUVNjcmVlbiogcXNjcmVlbikgewoJaWYgKHRoaXMtPm1TY3JlZW4gIT0gbnVsbHB0cikgewoJCVFPYmplY3Q6OmRpc2Nvbm5lY3QodGhpcy0+bVNjcmVlbiwgbnVsbHB0ciwgdGhpcywgbnVsbHB0cik7Cgl9CgoJaWYgKHFzY3JlZW4gIT0gbnVsbHB0cikgewoJCVFPYmplY3Q6OmNvbm5lY3QocXNjcmVlbiwgJlFPYmplY3Q6OmRlc3Ryb3llZCwgdGhpcywgJldsU2Vzc2lvbkxvY2tTdXJmYWNlOjpvblNjcmVlbkRlc3Ryb3llZCk7Cgl9CgoJaWYgKHRoaXMtPndpbmRvdyA9PSBudWxscHRyKSB7CgkJdGhpcy0+bVNjcmVlbiA9IHFzY3JlZW47Cgl9IGVsc2UgewoJCXRoaXMtPndpbmRvdy0+c2V0U2NyZWVuKHFzY3JlZW4pOwoJfQoKCWVtaXQgdGhpcy0+c2NyZWVuQ2hhbmdlZCgpOwp9Cgp2b2lkIFdsU2Vzc2lvbkxvY2tTdXJmYWNlOjpvblNjcmVlbkRlc3Ryb3llZCgpIHsgdGhpcy0+bVNjcmVlbiA9IG51bGxwdHI7IH0KClFDb2xvciBXbFNlc3Npb25Mb2NrU3VyZmFjZTo6Y29sb3IoKSBjb25zdCB7CglpZiAodGhpcy0+d2luZG93ID09IG51bGxwdHIpIHJldHVybiB0aGlzLT5tQ29sb3I7CgllbHNlIHJldHVybiB0aGlzLT53aW5kb3ctPmNvbG9yKCk7Cn0KCnZvaWQgV2xTZXNzaW9uTG9ja1N1cmZhY2U6OnNldENvbG9yKFFDb2xvciBjb2xvcikgewoJaWYgKHRoaXMtPndpbmRvdyA9PSBudWxscHRyKSB7CgkJdGhpcy0+bUNvbG9yID0gY29sb3I7CgkJZW1pdCB0aGlzLT5jb2xvckNoYW5nZWQoKTsKCX0gZWxzZSB0aGlzLT53aW5kb3ctPnNldENvbG9yKGNvbG9yKTsKfQoKUVFtbExpc3RQcm9wZXJ0eTxRT2JqZWN0PiBXbFNlc3Npb25Mb2NrU3VyZmFjZTo6ZGF0YSgpIHsKCXJldHVybiB0aGlzLT5tQ29udGVudEl0ZW0tPnByb3BlcnR5KCJkYXRhIikudmFsdWU8UVFtbExpc3RQcm9wZXJ0eTxRT2JqZWN0Pj4oKTsKfQoKdm9pZCBXbFNlc3Npb25Mb2NrU3VyZmFjZTo6b25XaWR0aENoYW5nZWQoKSB7IHRoaXMtPm1Db250ZW50SXRlbS0+c2V0V2lkdGgodGhpcy0+d2lkdGgoKSk7IH0Kdm9pZCBXbFNlc3Npb25Mb2NrU3VyZmFjZTo6b25IZWlnaHRDaGFuZ2VkKCkgeyB0aGlzLT5tQ29udGVudEl0ZW0tPnNldEhlaWdodCh0aGlzLT5oZWlnaHQoKSk7IH0K
+#include "session_lock.hpp"
+
+#include <private/qwaylandscreen_p.h>
+#include <qcolor.h>
+#include <qcoreapplication.h>
+#include <qguiapplication.h>
+#include <qlogging.h>
+#include <qobject.h>
+#include <qqmlcomponent.h>
+#include <qqmlengine.h>
+#include <qqmllist.h>
+#include <qquickgraphicsconfiguration.h>
+#include <qquickitem.h>
+#include <qquickwindow.h>
+#include <qscreen.h>
+#include <qtmetamacros.h>
+#include <qtypes.h>
+
+#include "../core/qmlglobal.hpp"
+#include "../core/qmlscreen.hpp"
+#include "../core/reload.hpp"
+#include "../window/proxywindow.hpp"
+#include "session_lock/session_lock.hpp"
+
+WlSessionLock::~WlSessionLock() {
+	if (this->isLocked()) {
+		qCritical() << "Session lock object was destroyed without unlocking. The session will stay "
+		               "locked in case this was accidental.";
+		qCritical() << "Component.onDestruction may be used if this behavior is required, but it may "
+		               "result in a lock failing open.";
+	}
+}
+
+void WlSessionLock::onReload(QObject* oldInstance) {
+	auto* old = qobject_cast<WlSessionLock*>(oldInstance);
+
+	if (old != nullptr) {
+		QObject::disconnect(old->manager, nullptr, old, nullptr);
+		this->manager = old->manager;
+		this->manager->setParent(this);
+	} else {
+		this->manager = new SessionLockManager(this);
+	}
+
+	// clang-format off
+	QObject::connect(this->manager, &SessionLockManager::locked, this, &WlSessionLock::secureStateChanged);
+	QObject::connect(this->manager, &SessionLockManager::unlocked, this, &WlSessionLock::secureStateChanged);
+
+	QObject::connect(this->manager, &SessionLockManager::unlocked, this, &WlSessionLock::unlock);
+
+	auto* app = QCoreApplication::instance();
+	auto* guiApp = qobject_cast<QGuiApplication*>(app);
+
+	if (guiApp != nullptr) {
+		QObject::connect(guiApp, &QGuiApplication::primaryScreenChanged, this, &WlSessionLock::onScreensChanged);
+		QObject::connect(guiApp, &QGuiApplication::screenAdded, this, &WlSessionLock::onScreensChanged);
+		QObject::connect(guiApp, &QGuiApplication::screenRemoved, this, &WlSessionLock::onScreensChanged);
+	}
+	// clang-format on
+
+	this->realizeLockTarget(old);
+}
+
+void WlSessionLock::updateSurfaces(bool show, WlSessionLock* old) {
+	auto screens = QGuiApplication::screens();
+
+	screens.removeIf([](QScreen* screen) {
+		auto* waylandScreen = dynamic_cast<QtWaylandClient::QWaylandScreen*>(screen->handle());
+		if (waylandScreen == nullptr || waylandScreen->isPlaceholder()
+		    || waylandScreen->output() == nullptr)
+		{
+			qDebug() << "Not creating lock surface for screen" << screen
+			         << "as it is not backed by a valid wayland output.";
+
+			return true;
+		}
+
+		return false;
+	});
+
+	auto map = this->surfaces.toStdMap();
+	for (auto& [screen, surface]: map) {
+		if (!screens.contains(screen)) {
+			this->surfaces.remove(screen);
+			surface->deleteLater();
+		}
+	}
+
+	for (auto* screen: screens) {
+		if (!this->surfaces.contains(screen)) {
+			auto* instanceObj =
+			    this->mSurfaceComponent->create(QQmlEngine::contextForObject(this->mSurfaceComponent));
+			auto* instance = qobject_cast<WlSessionLockSurface*>(instanceObj);
+
+			if (instance == nullptr) {
+				qWarning()
+				    << "WlSessionLock.surface does not create a WlSessionLockSurface. Aborting lock.";
+				if (instanceObj != nullptr) instanceObj->deleteLater();
+				this->unlock();
+				return;
+			}
+
+			instance->setParent(this);
+			instance->setScreen(screen);
+
+			auto* oldInstance = old == nullptr ? nullptr : old->surfaces.value(screen, nullptr);
+			instance->reload(oldInstance);
+
+			this->surfaces[screen] = instance;
+		}
+	}
+
+	if (show) {
+		if (!this->manager->isLocked()) {
+			qFatal() << "Tried to show lockscreen surfaces without active lock";
+		}
+
+		for (auto* surface: this->surfaces.values()) {
+			surface->show();
+		}
+	}
+}
+
+void WlSessionLock::realizeLockTarget(WlSessionLock* old) {
+	if (this->realizing || !this->manager) {
+		this->awaitingRealization = true;
+		return;
+	}
+
+	this->realizing = true;
+
+	[&, this]() {
+		if (this->lockTarget) {
+			if (!SessionLockManager::lockAvailable()) {
+				qCritical() << "Cannot start session lock: The current compositor does not support the "
+				               "ext-session-lock-v1 protocol.";
+				this->unlock();
+				return;
+			}
+
+			if (this->mSurfaceComponent == nullptr) {
+				qWarning() << "WlSessionLock.surface is null. Aborting lock.";
+				this->unlock();
+				return;
+			}
+
+			// preload initial surfaces to make the chance of the compositor displaying a blank
+			// frame before the lock surfaces are shown as low as possible.
+			this->updateSurfaces(false);
+
+			auto wasLocked = this->isLocked();
+			if (!this->manager->lock()) {
+				qWarning() << "Failed to acquire session lock.";
+				this->unlock();
+				return;
+			}
+
+			this->updateSurfaces(true, old);
+			if (!wasLocked) emit this->lockStateChanged();
+		} else {
+			this->unlock(); // emits lockStateChanged
+		}
+	}();
+
+	this->realizing = false;
+
+	if (this->awaitingRealization) {
+		this->awaitingRealization = false;
+		this->realizeLockTarget();
+	}
+}
+
+void WlSessionLock::unlock() {
+	this->lockTarget = false;
+
+	for (auto* surface: this->surfaces) {
+		surface->deleteLater();
+	}
+
+	this->surfaces.clear();
+
+	// Capture the state before unlocking: manager->unlock() clears the lock
+	// synchronously, so checking isLocked() afterwards (as before) could never
+	// observe the transition and lockStateChanged was never emitted on unlock.
+	// QML bindings on WlSessionLock.locked then stayed true forever, making
+	// every later lock() call a no-op.
+	auto wasLocked = this->isLocked();
+	if (this->manager) this->manager->unlock();
+	if (wasLocked) emit this->lockStateChanged();
+}
+
+void WlSessionLock::onScreensChanged() {
+	// Theoretically screens shouldnt be invalidated while realizing, instead in later event loop cycles.
+	if (this->isLocked() && !this->realizing) {
+		this->updateSurfaces(true);
+	}
+}
+
+bool WlSessionLock::isLocked() const { return this->manager && this->manager->isLocked(); }
+
+bool WlSessionLock::isSecure() const {
+	return this->manager != nullptr && SessionLockManager::isSecure();
+}
+
+void WlSessionLock::setLocked(bool locked) {
+	if (this->lockTarget == locked) return;
+	this->lockTarget = locked;
+
+	this->realizeLockTarget();
+}
+
+QQmlComponent* WlSessionLock::surfaceComponent() const { return this->mSurfaceComponent; }
+
+void WlSessionLock::setSurfaceComponent(QQmlComponent* surfaceComponent) {
+	if (this->manager != nullptr && this->manager->isLocked()) {
+		qCritical() << "WlSessionLock.surfaceComponent cannot be changed while the lock is active.";
+		return;
+	}
+
+	if (this->mSurfaceComponent != nullptr) this->mSurfaceComponent->deleteLater();
+	if (surfaceComponent != nullptr) surfaceComponent->setParent(this);
+
+	this->mSurfaceComponent = surfaceComponent;
+	emit this->surfaceComponentChanged();
+}
+
+WlSessionLockSurface::WlSessionLockSurface(QObject* parent)
+    : Reloadable(parent)
+    , mContentItem(new QQuickItem())
+    , ext(new LockWindowExtension(this)) {
+	QQmlEngine::setObjectOwnership(this->mContentItem, QQmlEngine::CppOwnership);
+	this->mContentItem->setParent(this);
+
+	// clang-format off
+	QObject::connect(this, &WlSessionLockSurface::widthChanged, this, &WlSessionLockSurface::onWidthChanged);
+	QObject::connect(this, &WlSessionLockSurface::heightChanged, this, &WlSessionLockSurface::onHeightChanged);
+	// clang-format on
+}
+
+WlSessionLockSurface::~WlSessionLockSurface() {
+	if (this->window != nullptr) {
+		this->window->destroy();
+		this->window->deleteLater();
+	}
+}
+
+void WlSessionLockSurface::onReload(QObject* oldInstance) {
+	if (auto* old = qobject_cast<WlSessionLockSurface*>(oldInstance)) {
+		this->window = old->disownWindow();
+	}
+
+	if (this->window == nullptr) {
+		this->window = new QsQuickWindowBase();
+
+		// needed for vulkan dmabuf import, qt ignores these if not applicable
+		auto graphicsConfig = this->window->graphicsConfiguration();
+		graphicsConfig.setDeviceExtensions({
+		    "VK_KHR_external_memory_fd",
+		    "VK_EXT_external_memory_dma_buf",
+		    "VK_EXT_image_drm_format_modifier",
+		});
+		this->window->setGraphicsConfiguration(graphicsConfig);
+	}
+
+	this->mContentItem->setParentItem(this->window->contentItem());
+
+	this->mContentItem->setWidth(this->width());
+	this->mContentItem->setHeight(this->height());
+
+	if (this->mScreen != nullptr) this->window->setScreen(this->mScreen);
+	this->window->setColor(this->mColor);
+
+	// clang-format off
+	QObject::connect(this->window, &QWindow::visibilityChanged, this, &WlSessionLockSurface::visibleChanged);
+	QObject::connect(this->window, &QWindow::widthChanged, this, &WlSessionLockSurface::widthChanged);
+	QObject::connect(this->window, &QWindow::heightChanged, this, &WlSessionLockSurface::heightChanged);
+	QObject::connect(this->window, &QWindow::screenChanged, this, &WlSessionLockSurface::screenChanged);
+	QObject::connect(this->window, &QQuickWindow::colorChanged, this, &WlSessionLockSurface::colorChanged);
+	// clang-format on
+}
+
+void WlSessionLockSurface::attach() {
+	if (this->ext->isAttached()) return;
+
+	if (auto* parent = qobject_cast<WlSessionLock*>(this->parent())) {
+		if (!this->ext->attach(this->window, parent->manager)) {
+			qFatal() << "Failed to attach WlSessionLockSurface";
+		}
+	} else {
+		qFatal() << "Tried to attach a WlSessionLockSurface whose parent is not a WlSessionLock";
+	}
+}
+
+QQuickWindow* WlSessionLockSurface::disownWindow() {
+	QObject::disconnect(this->window, nullptr, this, nullptr);
+	this->mContentItem->setParentItem(nullptr);
+
+	auto* window = this->window;
+	this->window = nullptr;
+	return window;
+}
+
+void WlSessionLockSurface::show() {
+	this->attach();
+	this->ext->setVisible();
+}
+
+QQuickItem* WlSessionLockSurface::contentItem() const { return this->mContentItem; }
+
+bool WlSessionLockSurface::isVisible() const {
+	if (this->window == nullptr) return false;
+	return this->window->isVisible();
+}
+
+qint32 WlSessionLockSurface::width() const {
+	if (this->window == nullptr) return 0;
+	else return this->window->width();
+}
+
+qint32 WlSessionLockSurface::height() const {
+	if (this->window == nullptr) return 0;
+	else return this->window->height();
+}
+
+QuickshellScreenInfo* WlSessionLockSurface::screen() const {
+	QScreen* qscreen = nullptr;
+
+	if (this->window == nullptr) {
+		if (this->mScreen != nullptr) qscreen = this->mScreen;
+	} else {
+		qscreen = this->window->screen();
+	}
+
+	return QuickshellTracked::instance()->screenInfo(qscreen);
+}
+
+void WlSessionLockSurface::setScreen(QScreen* qscreen) {
+	if (this->mScreen != nullptr) {
+		QObject::disconnect(this->mScreen, nullptr, this, nullptr);
+	}
+
+	if (qscreen != nullptr) {
+		QObject::connect(qscreen, &QObject::destroyed, this, &WlSessionLockSurface::onScreenDestroyed);
+	}
+
+	if (this->window == nullptr) {
+		this->mScreen = qscreen;
+	} else {
+		this->window->setScreen(qscreen);
+	}
+
+	emit this->screenChanged();
+}
+
+void WlSessionLockSurface::onScreenDestroyed() { this->mScreen = nullptr; }
+
+QColor WlSessionLockSurface::color() const {
+	if (this->window == nullptr) return this->mColor;
+	else return this->window->color();
+}
+
+void WlSessionLockSurface::setColor(QColor color) {
+	if (this->window == nullptr) {
+		this->mColor = color;
+		emit this->colorChanged();
+	} else this->window->setColor(color);
+}
+
+QQmlListProperty<QObject> WlSessionLockSurface::data() {
+	return this->mContentItem->property("data").value<QQmlListProperty<QObject>>();
+}
+
+void WlSessionLockSurface::onWidthChanged() { this->mContentItem->setWidth(this->width()); }
+void WlSessionLockSurface::onHeightChanged() { this->mContentItem->setHeight(this->height()); }
