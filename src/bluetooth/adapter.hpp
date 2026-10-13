@@ -158,8 +158,32 @@ private:
 	
 	QS_DBUS_BINDABLE_PROPERTY_GROUP(BluetoothAdapter, properties);
 	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pName, bName, properties, "Alias");
-	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pEnabled, bEnabled, properties, "Powered");
-	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pState, bState, properties, "PowerState");
+	// Use explicit callback to ensure enabledChanged is emitted when Powered changes via D-Bus
+	QT_WARNING_PUSH QT_WARNING_DISABLE_INVALID_OFFSETOF
+  QS_DBUS_PROPERTY_BINDING_8(
+      BluetoothAdapter,
+      void,
+      pEnabled,
+      bEnabled,
+      enabledChanged,
+      properties,
+      "Powered",
+      true
+  );
+	QT_WARNING_POP
+	// Use explicit callback to ensure stateChanged is emitted when PowerState changes via D-Bus
+	QT_WARNING_PUSH QT_WARNING_DISABLE_INVALID_OFFSETOF
+  QS_DBUS_PROPERTY_BINDING_8(
+      BluetoothAdapter,
+      void,
+      pState,
+      bState,
+      stateChanged,
+      properties,
+      "PowerState",
+      true
+  );
+	QT_WARNING_POP
 	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pDiscoverable, bDiscoverable, properties, "Discoverable");
 	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pDiscoverableTimeout, bDiscoverableTimeout, properties, "DiscoverableTimeout");
 	QS_DBUS_PROPERTY_BINDING(BluetoothAdapter, pDiscovering, bDiscovering, properties, "Discovering");

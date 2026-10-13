@@ -10,6 +10,7 @@
 #include <qloggingcategory.h>
 #include <qstring.h>
 #include <qtypes.h>
+#include <qtimer.h>
 
 #include "../core/logcat.hpp"
 #include "../dbus/properties.hpp"
@@ -97,7 +98,15 @@ void BluetoothAdapter::setPairableTimeout(quint32 timeout) {
 void BluetoothAdapter::addInterface(const QString& interface, const QVariantMap& properties) {
 	if (interface == "org.bluez.Adapter1") {
 		this->properties.updatePropertySet(properties, false);
-		qCDebug(logAdapter) << "Updated Adapter properties for" << this;
+		// Force signal emission for initial property set
+		emit enabledChanged();
+		emit stateChanged();
+		// BlueZ may not emit PropertiesChanged for Powered/PowerState when auto-enabling after wake.
+		// Schedule a GetAll to fetch the actual current state.
+		QTimer::singleShot(500, this, [this]() {
+			qDebug() << "[BT-ADAPTER] Scheduled GetAll to refresh state";
+			this->properties.updateAllViaGetAll();
+		});
 	}
 }
 
